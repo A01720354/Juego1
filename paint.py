@@ -24,7 +24,9 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
+    up()
     goto(start.x, start.y)
+    down()
     begin_fill()
     turtle.circle(100, None, None)
     end_fill()
