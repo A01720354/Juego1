@@ -24,7 +24,10 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    goto(start.x, start.y)
+    begin_fill()
+    turtle.circle(100, None, None)
+    end_fill()
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
