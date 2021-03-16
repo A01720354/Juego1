@@ -37,12 +37,22 @@ def rectangle(start, end):
 
 def triangle(start, end):
     "Draw triangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(3):
+        forward(100)
+        left(120)
+        forward(100)
+
+    end_fill()
 
 def tap(x, y):
     "Store starting point or draw shape."
     start = state['start']
-
+# comentario Eugenio
     if start is None:
         state['start'] = vector(x, y)
     else:
