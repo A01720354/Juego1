@@ -40,7 +40,7 @@ def triangle(start, end):
 def tap(x, y):
     "Store starting point or draw shape."
     start = state['start']
-
+# comentario Eugenio
     if start is None:
         state['start'] = vector(x, y)
     else:
